@@ -69,8 +69,47 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <button type="button" class="close" data-modal-close> 
+                    <button type="button" class="close-modal" data-modal-close> 
                     </button>
+                    <p class="head-modal">Оставьте свои данные, мы вам перезвоним</p>
+                        <form action="#" class="modal-form">
+                        <div class="modal-area">
+                            <div class="modal-field">
+                            <label for="user-name" class="modal-label">Имя</label>
+                             <input 
+                             class="modal-input"
+                             type="text" 
+                             name="user-name" 
+                             id="user-name">   
+                            </div>
+                            <div class="modal-field">
+                                <label for="user-tel"class="modal-label">Телефон</label>
+                                <input 
+                                class="modal-input" 
+                                type="tel" 
+                                name="user-tel" 
+                                id="user-tel">
+                            </div>
+                            <div class="modal-field">
+                                <label for="user-mail" class="modal-label">Почта</label>
+                                <input 
+                                class="modal-input" 
+                                type="email" 
+                                name="user-mail" 
+                                id="user-mail">
+                            </div>
+                            <div class="modal-field">
+                                <label for="user-text" class="modal-label">Комментарий</label>
+                                <textarea
+                                class="modal-textarea" 
+                                name="user-text" 
+                                id="user-text"
+                                placeholder="Введите текст"
+                                ></textarea>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -382,6 +421,20 @@
                         </li>
                     </ul>
                     </div>
+                    <div class="subscribe-footer-div">
+                        <p class="subscribe-head-footer">Подпишитесь на рассылку</p>
+                        <form action="#" class="modal-form-footer">
+                            <label>
+                                <input
+                                class="modal-input-footer" 
+                                type="email" 
+                                name="email"
+                                placeholder="E-mail">
+                            </label>
+                            <button type="submit" class="modal-button-footer btn">Подписаться</button>
+                        </form>
+                    </div>
+            
                 </address>
             </div>
         </footer>

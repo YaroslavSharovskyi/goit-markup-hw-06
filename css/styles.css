@@ -290,7 +290,7 @@ body {
   background-color: #fff;
 }
 
-.close {
+.close-modal {
   display: flex;
   margin-left: auto;
 
@@ -305,6 +305,61 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.head-modal {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 12px;
+
+  color: var(--primary-text-color);
+}
+
+.modal-area {
+  margin-right: 40px;
+  margin-left: 40px;
+  text-align: left;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  margin-bottom: 4px;
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.modal-textarea {
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 /* Основное */
@@ -578,6 +633,8 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bgc-hero-footer);
+  padding-left: 215px;
+  padding-right: 215px;
 }
 
 .logo-frame {
@@ -654,6 +711,48 @@ body {
   width: 20px;
   height: 20px;
   fill: #ffffff;
+}
+
+.subscribe-footer-div {
+  margin-left: 93px;
+}
+
+.subscribe-head-footer {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.modal-input-footer {
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: transparent;
+}
+
+::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.modal-button-footer {
+  margin-left: 12px;
+}
+
+.modal-button-footer::after {
+  content: "";
+
+  width: 24px;
+  height: 24px;
 }
 
 /* Portfolio */
