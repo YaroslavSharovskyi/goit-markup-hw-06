@@ -76,27 +76,33 @@
                         <div class="modal-area">
                             <div class="modal-field">
                             <label for="user-name" class="modal-label">Имя</label>
-                             <input 
-                             class="modal-input"
-                             type="text" 
-                             name="user-name" 
-                             id="user-name">   
+                            <span class="input-wrapter">
+                                <input class="modal-input" type="text" name="user-name" id="user-name">
+                                <svg class="input-icon">
+                                    <use href="./images/sprite.svg#icon-personblack"></use>
+                                </svg>
+                            </span>
+                           
                             </div>
                             <div class="modal-field">
-                                <label for="user-tel"class="modal-label">Телефон</label>
-                                <input 
-                                class="modal-input" 
-                                type="tel" 
-                                name="user-tel" 
-                                id="user-tel">
+                                <label for="user-tel" class="modal-label">Телефон</label>
+                                <span class="input-wrapter">
+                                    <input class="modal-input" type="tel" name="user-tel" id="user-tel">
+                                    <svg class="input-icon">
+                                        <use href="./images/sprite.svg#icon-phoneblack"></use>
+                                    </svg>
+                                </span>
+
                             </div>
                             <div class="modal-field">
                                 <label for="user-mail" class="modal-label">Почта</label>
-                                <input 
-                                class="modal-input" 
-                                type="email" 
-                                name="user-mail" 
-                                id="user-mail">
+                                <span class="input-wrapter">
+                                    <input class="modal-input" type="email" name="user-mail" id="user-mail">
+                                    <svg class="input-icon">
+                                        <use href="./images/sprite.svg#icon-emailblack"></use>
+                                    </svg>
+                                </span>
+                                
                             </div>
                             <div class="modal-field">
                                 <label for="user-text" class="modal-label">Комментарий</label>
@@ -107,11 +113,18 @@
                                 placeholder="Введите текст"
                                 ></textarea>
                             </div>
+                            <input type="checkbox" id="modal-checkbox" class="modal-checkbox visually-hidden">
+                            <label for="modal-checkbox" class="check-text"><span>
+                                <svg class="check-icon">
+                                    <use href="./images/sprite.svg#icon-ok"></use>
+                                </svg>
+                            </span>
+                            Соглашаюсь с рассылкой и принимаю&#160; <a href="" class="terms-contract">Условия договора</a></label>
+                            <button type="submit" class="button-modal btn">Отправить</button>
                         </div>
                         </form>
                     </div>
                 </div>
-            </div>
         </section>
         
         <!-- Основне -->
@@ -389,7 +402,7 @@
                         </li>
                     </ul>
                     <div class="join-footer-div">
-                    <h3 class="join-footer">присоединяйтесь</h3>
+                    <p class="join-footer">присоединяйтесь</p>
                     <ul class="social-list-footer list">
                         <li class="social-item-footer">
                             <a href="" class="social-link-footer link">
